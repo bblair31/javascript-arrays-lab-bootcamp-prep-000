@@ -2,7 +2,7 @@
 var kittens = ["Milo", "Otis", "Garfield"]
 
 function destructivelyAppendKitten(name) {
-  kittens.push("Ralph")
+  kittens.push([$name])
   return kittens
 }
 function destructivelyPrependKitten(name) {
@@ -15,4 +15,3 @@ function destructivelyRemoveLastKitten(name) {
 function destructivelyRemoveFirstKitten(name) {
   return kittens.shift()
 }
-function appendKitten(name) {
